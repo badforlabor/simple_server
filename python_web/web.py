@@ -32,7 +32,7 @@ Context-Length: '''
 lisfd = socket.socket(socket.AF_INET,socket.SOCK_STREAM)  
 lisfd.bind((HOST, PORT))  
 lisfd.listen(2)  
-  
+print ('start server... \n ip  ',HOST,' \n port', PORT   )
 signal.signal(signal.SIGINT,sigIntHander)  
   
 runflag = True  
