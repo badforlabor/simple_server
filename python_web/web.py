@@ -1,4 +1,4 @@
-#!/usr/bin/python [3.5.2 test pass]
+#!/usr/bin/python
 import socket  
 import signal  
 import errno  
@@ -53,7 +53,7 @@ while runflag:
     data = confd.recv(1024)  
     if not data:  
         break  
-    print (data  )
+    #print (data  )
     #confd.send(HttpResponse(httpheader,'index.html'))  
     confd.send("python web".encode("utf-8"))  
     confd.close()  
